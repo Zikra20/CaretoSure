@@ -13,24 +13,24 @@ const Navbar = () => {
 
   return (
     <nav className="relative flex items-center p-4 md:justify-around">
-      <h1 className="mr-auto text-2xl font-serif font-medium text-teal-500 md:mr-0">
+      <h1 className="mr-auto text-2xl font-serif font-medium text-teal-500 cursor-default md:mr-0">
         SrMedical
       </h1>
 
-      <div className="hidden sm:flex gap-x-4 text-lg font-medium text-indigo-900">
-        <NavLink className="hover:text-indigo-700" to="/about">
+      <div className="hidden sm:flex gap-x-4 text-lg font-medium text-purple-950">
+        <NavLink className="hover:text-purple-700" to="/about">
           About
         </NavLink>
-        <NavLink className="hover:text-indigo-700" to="/services">
+        <NavLink className="hover:text-purple-700" to="/services">
           Services
         </NavLink>
-        <NavLink className="hover:text-indigo-700" to="/doctors">
+        <NavLink className="hover:text-purple-700" to="/doctors">
           Doctors
         </NavLink>
-        <NavLink className="hover:text-indigo-700" to="/blog">
+        <NavLink className="hover:text-purple-700" to="/blog">
           Blog
         </NavLink>
-        <NavLink className="hover:text-indigo-700" to="/contact">
+        <NavLink className="hover:text-purple-700" to="/contact">
           Contact
         </NavLink>
       </div>
@@ -45,7 +45,7 @@ const Navbar = () => {
       </div>
 
       {displayMenu && (
-        <div className="absolute top-full left-0 w-full flex flex-col gap-y-4 bg-white text-lg font-medium text-indigo-900 z-10 [&>*]:pt-4 [&>*]:pl-4 [&>*]:border-t md:hidden">
+        <div className="absolute top-full left-0 w-full flex flex-col gap-y-4 bg-white text-lg font-medium text-purple-950 z-10 [&>*]:pt-4 [&>*]:pl-4 [&>*]:border-t md:hidden">
           <Link to="/about">About</Link>
           <Link to="/services">Services</Link>
           <Link to="/doctors">Doctors</Link>

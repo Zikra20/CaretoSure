@@ -14,7 +14,7 @@ const Layout = () => {
         <Navbar />
       </header>
 
-      <main>
+      <main className="max-w-[2300px] my-0 mx-auto overflow-x-hidden">
         <Outlet />
       </main>
 

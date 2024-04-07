@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="w-full px-4 py-8 flex flex-col justify-between gap-y-8 bg-indigo-950 lg:px-12 lg:py-16 lg:flex-row">
       <div className="flex flex-col gap-y-4 lg:basis-1/4 lg:mr-auto">
-        <h1 className="text-2xl font-serif font-medium text-teal-500">
+        <h1 className="text-2xl font-serif font-medium text-teal-500 cursor-default">
           SrMedical
         </h1>
 
