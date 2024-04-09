@@ -1,9 +1,20 @@
+import { useState } from "react";
 import { FaDna, FaStethoscope, FaLaptopMedical } from "react-icons/fa";
-import { IoArrowForward } from "react-icons/io5";
+import { IoArrowForward, IoClose } from "react-icons/io5";
 
 import DoctorSlider from "../components/DoctorSlider";
+import Appointment from "../components/Appointment";
+
+import faqData from "../data/faqData";
 
 const Landing = () => {
+  // FAQ Section state handling
+  const [displayFAQ, setDisplayFAQ] = useState(0);
+
+  const handleFAQ = () => {
+    setDisplayFAQ((prev) => !prev);
+  };
+
   return (
     <>
       {/* Hero Section */}
@@ -108,13 +119,13 @@ const Landing = () => {
       {/* Health and well-being Section */}
       <section className="py-8 px-4 bg-purple-400 text-purple-900 lg:px-16 lg:py-24">
         <div className="flex flex-col items-center gap-y-4 mb-8 md:flex-row">
-          <h1 className="text-2xl font-bold mr-auto md:basis-2/4 md:text-4xl">
+          <h3 className="text-2xl font-bold mr-auto md:basis-2/4 md:text-4xl">
             Finding new ways to improve the{" "}
             <span className="font-playfair-display italic text-purple-50">
               health and well-being
             </span>{" "}
             of people everywhere.
-          </h1>
+          </h3>
 
           <div className="flex flex-col gap-y-4 md:basis-1/3">
             <p className="w-fit text-xl">
@@ -150,12 +161,12 @@ const Landing = () => {
       {/* Doctors Showcase Section */}
       <section className="py-8 px-4 text-purple-900 lg:px-16 lg:py-24">
         <div className="flex flex-col items-center gap-y-4 mb-8 md:flex-row">
-          <h1 className="text-4xl font-semibold mr-auto md:basis-1/3">
+          <h4 className="text-4xl font-semibold mr-auto md:basis-1/3">
             Discover our Highly Qualified{" "}
             <span className="font-playfair-display text-purple-400 italic">
               Doctors
             </span>
-          </h1>
+          </h4>
 
           <button className="w-fit py-4 px-8 self-start flex items-center gap-x-4 bg-teal-500 font-medium text-white rounded-2xl lg:hover:bg-teal-600 ease-in-out duration-200">
             See All Doctors <IoArrowForward className="text-2xl" />
@@ -166,7 +177,37 @@ const Landing = () => {
       </section>
 
       {/* FAQ Section */}
-      <section></section>
+      <section className="py-8 px-4 bg-cyan-400 text-purple-900 cursor-pointer lg:px-16 lg:py-24">
+        <h5 className="text-2xl md:text-4xl font-semibold">
+          Frequently Asked{" "}
+          <span className="text-white font-playfair-display italic">
+            Questions
+          </span>
+        </h5>
+
+        <div className="flex flex-col">
+          {faqData.map((faq) => (
+            <div
+              key={faq.id}
+              className="py-4 flex flex-wrap items-center justify-between gap-y-4 border-b border-black"
+            >
+              <p className="basis-2/3 font-bold">{faq.question}</p>
+              <span
+                className={`text-4xl ${
+                  displayFAQ ? "rotate-0" : "rotate-45"
+                } cursor-pointer`}
+                onClick={handleFAQ(faq.id)}
+              >
+                <IoClose />
+              </span>
+              <p className="hidden basis-full">{faq.answer}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Appointment Section */}
+      <Appointment />
     </>
   );
 };
