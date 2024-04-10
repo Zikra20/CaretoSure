@@ -1,9 +1,11 @@
+import { Suspense } from "react";
 import { Outlet } from "react-router-dom";
 
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 import ScrollToTop from "../utils/ScrollToTop";
+import Loading from "../components/Loading";
 
 const Layout = () => {
   return (
@@ -15,7 +17,9 @@ const Layout = () => {
       </header>
 
       <main className="max-w-[2300px] my-0 mx-auto overflow-x-hidden">
-        <Outlet />
+        <Suspense fallback={<Loading />}>
+          <Outlet />
+        </Suspense>
       </main>
 
       <footer>

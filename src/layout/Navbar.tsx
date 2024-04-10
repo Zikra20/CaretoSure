@@ -13,9 +13,12 @@ const Navbar = () => {
 
   return (
     <nav className="relative flex items-center p-4 md:justify-around">
-      <h1 className="mr-auto text-3xl font-playfair-display font-medium text-teal-500 cursor-default md:mr-0">
+      <NavLink
+        to="/"
+        className="mr-auto text-3xl font-playfair-display font-medium text-teal-500 md:mr-0"
+      >
         SrMedical
-      </h1>
+      </NavLink>
 
       <div className="hidden sm:flex gap-x-4 text-lg font-medium text-purple-950">
         <NavLink className="hover:text-teal-400" to="/about">

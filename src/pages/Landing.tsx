@@ -178,6 +178,10 @@ const Landing = () => {
         </div>
 
         <DoctorSlider />
+
+        <span className="text-black text-center md:hidden">
+          *Swipe left or right to see more.
+        </span>
       </section>
 
       {/* FAQ Section */}
