@@ -24,7 +24,7 @@ const DoctorSlider = () => {
     <div className="max-w-full">
       {/* Slider Body */}
       <div
-        className="flex gap-4 ease-linear duration-150 overflow-x-scroll no-scrollbar sm:gap-x-8 md:overflow-x-visible"
+        className="flex gap-4 ease-in-out duration-300 overflow-x-scroll no-scrollbar sm:gap-x-8 md:overflow-x-visible"
         style={slideStyle}
       >
         {doctorsData.map((doctor) => {

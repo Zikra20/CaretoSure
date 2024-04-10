@@ -123,7 +123,7 @@ const Landing = () => {
       {/* Health and well-being Section */}
       <section className="py-8 px-4 bg-purple-400 text-purple-900 lg:px-16 lg:py-24">
         <div className="flex flex-col items-center gap-y-4 mb-8 md:flex-row">
-          <h3 className="text-2xl font-bold mr-auto md:basis-2/4 md:text-4xl">
+          <h3 className="text-2xl font-semibold mr-auto md:basis-2/4 md:text-4xl">
             Finding new ways to improve the{" "}
             <span className="font-playfair-display italic text-purple-50">
               health and well-being
