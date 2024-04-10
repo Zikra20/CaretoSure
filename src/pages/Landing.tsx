@@ -11,8 +11,12 @@ const Landing = () => {
   // FAQ Section state handling
   const [displayFAQ, setDisplayFAQ] = useState(0);
 
-  const handleFAQ = () => {
-    setDisplayFAQ((prev) => !prev);
+  const handleFAQ = (id: number) => {
+    if (id !== displayFAQ) {
+      setDisplayFAQ(id);
+    } else if (id === displayFAQ) {
+      setDisplayFAQ(0);
+    }
   };
 
   return (
@@ -178,7 +182,7 @@ const Landing = () => {
 
       {/* FAQ Section */}
       <section className="py-8 px-4 bg-cyan-400 text-purple-900 cursor-pointer lg:px-16 lg:py-24">
-        <h5 className="text-2xl md:text-4xl font-semibold">
+        <h5 className="text-2xl md:text-4xl font-semibold mb-12">
           Frequently Asked{" "}
           <span className="text-white font-playfair-display italic">
             Questions
@@ -189,18 +193,30 @@ const Landing = () => {
           {faqData.map((faq) => (
             <div
               key={faq.id}
-              className="py-4 flex flex-wrap items-center justify-between gap-y-4 border-b border-black"
+              className="flex flex-wrap gap-y-4 border-b border-purple-900 [&>*]:px-4 [&>*]:select-none"
+              onClick={() => handleFAQ(faq.id)}
             >
-              <p className="basis-2/3 font-bold">{faq.question}</p>
-              <span
-                className={`text-4xl ${
-                  displayFAQ ? "rotate-0" : "rotate-45"
-                } cursor-pointer`}
-                onClick={handleFAQ(faq.id)}
+              <div className="w-full py-4 flex items-center justify-between group">
+                <p className="basis-4/5 font-bold cursor-pointer ease-linear duration-150 group-hover:text-purple-500 lg:text-xl">
+                  {faq.question}
+                </p>
+                <span
+                  className={`text-4xl ease-in-out duration-300 ${
+                    displayFAQ === faq.id ? "rotate-0" : "rotate-45"
+                  } cursor-pointer`}
+                  onClick={() => handleFAQ(faq.id)}
+                >
+                  <IoClose />
+                </span>
+              </div>
+
+              <p
+                className={`${
+                  displayFAQ === faq.id ? "block" : "hidden"
+                } basis-full pb-4 font-semibold cursor-default animate-slide-in-top`}
               >
-                <IoClose />
-              </span>
-              <p className="hidden basis-full">{faq.answer}</p>
+                {faq.answer}
+              </p>
             </div>
           ))}
         </div>
