@@ -6,6 +6,7 @@ import DoctorSlider from "../components/DoctorSlider";
 import Appointment from "../components/Appointment";
 
 import faqData from "../data/faqData";
+import NewsSlider from "../components/NewsSlider";
 
 const Landing = () => {
   // FAQ Section state handling
@@ -179,7 +180,7 @@ const Landing = () => {
 
         <DoctorSlider />
 
-        <span className="text-black text-center md:hidden">
+        <span className="text-purple-950 text-center md:hidden">
           *Swipe left or right to see more.
         </span>
       </section>
@@ -224,6 +225,28 @@ const Landing = () => {
             </div>
           ))}
         </div>
+      </section>
+
+      {/* News Section */}
+      <section className="py-8 px-4 text-purple-900 lg:px-16 lg:py-24">
+        <div className="flex flex-col items-center gap-y-4 mb-8 md:flex-row">
+          <h4 className="text-4xl font-semibold mr-auto md:basis-1/3">
+            Our Latest{" "}
+            <span className="font-playfair-display text-purple-400 italic">
+              News
+            </span>
+          </h4>
+
+          <button className="w-fit py-4 px-8 self-start flex items-center gap-x-4 bg-teal-500 font-medium text-white rounded-2xl lg:hover:bg-teal-600 ease-in-out duration-200">
+            Read all news <IoArrowForward className="text-2xl" />
+          </button>
+        </div>
+
+        <NewsSlider />
+
+        <span className="text-purple-950 text-center md:hidden">
+          *Swipe left or right to see more.
+        </span>
       </section>
 
       {/* Appointment Section */}
