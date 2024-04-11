@@ -3,10 +3,10 @@ import { FaDna, FaStethoscope, FaLaptopMedical } from "react-icons/fa";
 import { IoArrowForward, IoClose } from "react-icons/io5";
 
 import DoctorSlider from "../components/DoctorSlider";
+import NewsSlider from "../components/NewsSlider";
 import Appointment from "../components/Appointment";
 
 import faqData from "../data/faqData";
-import NewsSlider from "../components/NewsSlider";
 
 const Landing = () => {
   // FAQ Section state handling

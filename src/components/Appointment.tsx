@@ -2,7 +2,7 @@ import { IoArrowForward } from "react-icons/io5";
 
 const Appointment = () => {
   return (
-    <section className="py-8 px-4 flex flex-col items-center gap-y-4 bg-purple-400 text-purple-900 text-center lg:py-24 lg:gap-y-8 [&>*]:w-fit">
+    <section className="py-8 px-4 flex flex-col items-center gap-y-4 bg-purple-300 text-purple-950 text-center md:py-24 lg:gap-y-8 [&>*]:w-fit">
       <h4 className="text-4xl font-semibold">
         Request your{" "}
         <span className="font-playfair-display text-white italic">

@@ -1,6 +1,34 @@
+import {
+  FaVial,
+  FaHeart,
+  FaTooth,
+  FaBrain,
+  FaStethoscope,
+} from "react-icons/fa";
+import {
+  GiNightSleep,
+  GiKidneys,
+  GiLoveInjection,
+  GiFemale,
+} from "react-icons/gi";
+import Appointment from "../components/Appointment";
+
+const services = [
+  { id: 1, icon: <FaVial />, name: "Lab Tests" },
+  { id: 2, icon: <FaHeart />, name: "Heart Diseases" },
+  { id: 3, icon: <FaTooth />, name: "Dental" },
+  { id: 4, icon: <GiNightSleep />, name: "Hypnotherapy" },
+  { id: 5, icon: <FaBrain />, name: "Neurology" },
+  { id: 6, icon: <GiKidneys />, name: "Urology" },
+  { id: 7, icon: <FaStethoscope />, name: "Occupational Medicine" },
+  { id: 8, icon: <GiLoveInjection />, name: "Vaccinations" },
+  { id: 9, icon: <GiFemale />, name: "Women's Health" },
+];
+
 const About = () => {
   return (
     <>
+      {/* Hero Section */}
       <section className="py-8 px-4 bg-purple-900 text-purple-400 lg:p-16">
         <div className="flex flex-col items-center gap-y-4 mb-8 md:flex-row">
           <h1 className="text-4xl text-balance mr-auto md:basis-1/3 md:text-5xl">
@@ -34,6 +62,29 @@ const About = () => {
           />
         </div>
       </section>
+
+      {/* Services Section */}
+      <section className="py-8 px-4 text-purple-900 lg:p-16">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-y-8">
+          {services.map((service) => (
+            <div
+              key={service.id}
+              className="px-4 py-8 flex flex-col gap-y-4 bg-purple-100 rounded-xl md:gap-y-8"
+            >
+              <span className="text-3xl text-teal-500">{service.icon}</span>
+              <h2 className="text-xl font-bold">{service.name}</h2>
+              <p>
+                These test provide valuable information to healthcare providers
+                about a patient's health status and can help guide treatment
+                decisions.
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Appointment Section */}
+      <Appointment />
     </>
   );
 };
