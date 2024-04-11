@@ -6,6 +6,7 @@ import Footer from "./Footer";
 
 import ScrollToTop from "../utils/ScrollToTop";
 import Loading from "../components/Loading";
+import Appointment from "../components/Appointment";
 
 const Layout = () => {
   return (
@@ -20,6 +21,8 @@ const Layout = () => {
         <Suspense fallback={<Loading />}>
           <Outlet />
         </Suspense>
+
+        <Appointment />
       </main>
 
       <footer>

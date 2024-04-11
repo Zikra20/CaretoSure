@@ -4,7 +4,6 @@ import { IoArrowForward, IoClose } from "react-icons/io5";
 
 import DoctorSlider from "../components/DoctorSlider";
 import NewsSlider from "../components/NewsSlider";
-import Appointment from "../components/Appointment";
 
 import faqData from "../data/faqData";
 
@@ -248,9 +247,6 @@ const Landing = () => {
           *Swipe left or right to see more.
         </span>
       </section>
-
-      {/* Appointment Section */}
-      <Appointment />
     </>
   );
 };

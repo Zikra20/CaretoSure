@@ -11,6 +11,11 @@ const Navbar = () => {
     setDisplayMenu((prev) => !prev);
   };
 
+  //NavLink Style
+  const navStyle = ({ isActive }) => ({
+    color: isActive ? "rgb(45 212 191)" : "",
+  });
+
   return (
     <nav className="relative flex items-center p-4 md:justify-around">
       <NavLink
@@ -20,20 +25,28 @@ const Navbar = () => {
         SrMedical
       </NavLink>
 
-      <div className="hidden sm:flex gap-x-4 text-lg font-medium text-purple-950">
-        <NavLink className="hover:text-teal-400" to="/about">
+      <div className="hidden sm:flex gap-x-4 text-lg font-medium text-purple-950 [&>*]:ease-in [&>*]:duration-75">
+        <NavLink to="/about" className="hover:text-teal-400" style={navStyle}>
           About
         </NavLink>
-        <NavLink className="hover:text-teal-400" to="/services">
+
+        <NavLink
+          to="/services"
+          className="hover:text-teal-400"
+          style={navStyle}
+        >
           Services
         </NavLink>
-        <NavLink className="hover:text-teal-400" to="/doctors">
+
+        <NavLink to="/doctors" className="hover:text-teal-400" style={navStyle}>
           Doctors
         </NavLink>
-        <NavLink className="hover:text-teal-400" to="/blog">
+
+        <NavLink to="/blog" className="hover:text-teal-400" style={navStyle}>
           Blog
         </NavLink>
-        <NavLink className="hover:text-teal-400" to="/contact">
+
+        <NavLink to="/contact" className="hover:text-teal-400" style={navStyle}>
           Contact
         </NavLink>
       </div>

@@ -11,7 +11,6 @@ import {
   GiLoveInjection,
   GiFemale,
 } from "react-icons/gi";
-import Appointment from "../components/Appointment";
 
 const services = [
   { id: 1, icon: <FaVial />, name: "Lab Tests" },
@@ -69,7 +68,7 @@ const About = () => {
           {services.map((service) => (
             <div
               key={service.id}
-              className="px-4 py-8 flex flex-col gap-y-4 bg-purple-100 rounded-xl md:gap-y-8"
+              className="px-4 py-8 flex flex-col gap-y-4 bg-purple-100 rounded-xl md:gap-y-6"
             >
               <span className="text-3xl text-teal-500">{service.icon}</span>
               <h2 className="text-xl font-bold">{service.name}</h2>
@@ -82,9 +81,6 @@ const About = () => {
           ))}
         </div>
       </section>
-
-      {/* Appointment Section */}
-      <Appointment />
     </>
   );
 };
