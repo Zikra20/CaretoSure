@@ -5,4 +5,5 @@ export default [
     {id: 4, url: "/assets/images/doctors/doctor-4.jpg"},
     {id: 5, url: "/assets/images/doctors/doctor-5.jpg"},
     {id: 6, url: "/assets/images/doctors/doctor-6.jpg"},
+    {id: 7, url: "/assets/images/doctors/doctor-7.jpg"},
 ]

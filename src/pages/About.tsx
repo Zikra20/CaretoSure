@@ -1,4 +1,7 @@
+import { FaHeadset, FaHandHoldingMedical } from "react-icons/fa";
+import { RiTeamFill } from "react-icons/ri";
 import { IoArrowForward } from "react-icons/io5";
+
 import DoctorSlider from "../components/DoctorSlider";
 
 const Services = () => {
@@ -91,6 +94,80 @@ const Services = () => {
                 <span className="text-lg font-bold">James Wilson</span>
                 <br /> Team Manager
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Us Section */}
+      <section className="py-8 px-4 text-purple-900 flex flex-col gap-8 md:flex-row lg:px-16 lg:py-24 lg:gap-16">
+        <img
+          src="/assets/images/about/about-us.jpg"
+          alt="Doctor with a patient"
+          loading="lazy"
+          className="object-cover object-center rounded-3xl md:max-w-[50%]"
+        />
+
+        <div className="flex flex-col gap-y-4 lg:p-8">
+          <h2 className="text-2xl font-bold md:text-4xl">
+            Why choose SrMedical's
+            <br />{" "}
+            <span className="font-playfair-display italic text-3xl text-purple-400 md:text-4xl">
+              health service
+            </span>
+          </h2>
+
+          <p className="text-xl font-semibold md:text-base">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+            eveniet libero corporis tempora, maxime minima assumenda eaque
+            asperiores tempore odio nesciunt.
+          </p>
+
+          <div className="flex flex-col gap-y-4 lg:gap-y-8">
+            <div className="flex gap-x-2 md:gap-x-4">
+              <span className="h-fit p-4 text-3xl text-teal-500 bg-teal-50 rounded-full">
+                <FaHeadset />
+              </span>
+
+              <div>
+                <h3 className="mb-2 text-xl font-bold">
+                  24/7 Medical Consultation
+                </h3>
+                <p>
+                  Animi ea natus placeat tenetur, perferendis repudiandae
+                  officiis exercitationem dolores repellendus.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-x-2 md:gap-x-4">
+              <span className="h-fit p-4 text-3xl text-green-500 bg-green-50 rounded-full">
+                <FaHandHoldingMedical />
+              </span>
+
+              <div>
+                <h3 className="mb-2 text-xl font-bold">Healthcare Support</h3>
+                <p>
+                  Animi ea natus placeat tenetur, perferendis repudiandae
+                  officiis exercitationem dolores repellendus.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-x-2 md:gap-x-4">
+              <span className="h-fit p-4 text-3xl text-yellow-500 bg-yellow-50 rounded-full">
+                <RiTeamFill />
+              </span>
+
+              <div>
+                <h3 className="mb-2 text-xl font-bold">
+                  Professional Medical Team
+                </h3>
+                <p>
+                  Animi ea natus placeat tenetur, perferendis repudiandae
+                  officiis exercitationem dolores repellendus.
+                </p>
+              </div>
             </div>
           </div>
         </div>
