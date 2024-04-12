@@ -45,7 +45,7 @@ const Landing = () => {
         </div>
 
         <img
-          src="/assets/images/hero.jpg"
+          src="/assets/images/landing/hero.jpg"
           alt="Scientist at work"
           className="w-full h-4/5 max-h-[700px] object-cover rounded-2xl"
         />
@@ -146,17 +146,17 @@ const Landing = () => {
         <div className="grid grid-cols-3 gap-x-2 [&>*]:h-full [&>*]:rounded-xl md:gap-x-6">
           <img
             loading="lazy"
-            src="/assets/images/consultation-1.jpg"
+            src="/assets/images/landing/consultation-1.jpg"
             alt="A medical consultation."
           />
           <img
             loading="lazy"
-            src="/assets/images/consultation-2.jpg"
+            src="/assets/images/landing/consultation-2.jpg"
             alt="A medical consultation."
           />
           <img
             loading="lazy"
-            src="/assets/images/consultation-3.jpg"
+            src="/assets/images/landing/consultation-3.jpg"
             alt="A medical consultation."
           />
         </div>

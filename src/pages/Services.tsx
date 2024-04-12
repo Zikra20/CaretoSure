@@ -49,13 +49,13 @@ const About = () => {
 
         <div className="flex items-center gap-x-4 [&>*]:object-cover [&>*]:position-center [&>*]:rounded-2xl">
           <img
-            src="/assets/images/about-1.jpg"
+            src="/assets/images/services-1.jpg"
             alt="Image of pediatrician."
             className="w-2/4 h-52 max-h-[700px] md:h-72 lg:h-[400px]"
           />
 
           <img
-            src="/assets/images/about-2.jpg"
+            src="/assets/images/services-2.jpg"
             alt="Doctor with a vaccine."
             className="w-2/4 h-52 max-h-[700px] md:h-72 lg:h-[400px]"
           />
