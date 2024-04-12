@@ -5,6 +5,7 @@ import Layout from "../layout/Layout";
 import Landing from "./Landing";
 const About = lazy(() => import("./About"));
 const Services = lazy(() => import("./Services"));
+const Blog = lazy(() => import("./Blog"));
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/services",
         element: <Services />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
       },
     ],
   },
