@@ -7,10 +7,10 @@ const NewsSlider = () => {
   const [slide, setSlide] = useState(0);
 
   function handleSlide(direction: string) {
-    if (direction === "right" && slide !== -1200) {
-      setSlide((prev) => prev - 600);
+    if (direction === "right" && slide !== -6000) {
+      setSlide((prev) => prev - 1500);
     } else if (direction === "left" && slide !== 0) {
-      setSlide((prev) => prev + 600);
+      setSlide((prev) => prev + 1500);
     } else {
       null;
     }
@@ -60,10 +60,16 @@ const NewsSlider = () => {
             className={`${slide === 0 ? "bg-purple-900" : "bg-gray-200"}`}
           ></div>
           <div
-            className={`${slide === -600 ? "bg-purple-900" : "bg-gray-200"}`}
+            className={`${slide === -1500 ? "bg-purple-900" : "bg-gray-200"}`}
           ></div>
           <div
-            className={`${slide === -1200 ? "bg-purple-900" : "bg-gray-200"}`}
+            className={`${slide === -3000 ? "bg-purple-900" : "bg-gray-200"}`}
+          ></div>
+          <div
+            className={`${slide === -4500 ? "bg-purple-900" : "bg-gray-200"}`}
+          ></div>
+          <div
+            className={`${slide === -6000 ? "bg-purple-900" : "bg-gray-200"}`}
           ></div>
         </div>
 
