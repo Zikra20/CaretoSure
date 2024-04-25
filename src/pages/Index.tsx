@@ -3,10 +3,12 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Layout from "../layout/Layout";
 import Landing from "./Landing";
+
 const About = lazy(() => import("./About"));
 const Services = lazy(() => import("./Services"));
 const Blog = lazy(() => import("./Blog"));
 const Doctors = lazy(() => import("./Doctors"));
+const Doctor = lazy(() => import("./Doctor"));
 
 const router = createBrowserRouter([
   {
@@ -28,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "/doctors",
         element: <Doctors />,
+      },
+      {
+        path: "/doctors/:doctorId",
+        element: <Doctor />,
       },
       {
         path: "/blog",
