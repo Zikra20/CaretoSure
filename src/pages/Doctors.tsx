@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { FaChevronDown } from "react-icons/fa";
+
 import doctorsData from "../data/doctorsData";
 
 const Doctors = () => {
@@ -54,7 +56,17 @@ const Doctors = () => {
           </span>
         </h2>
 
-        <p>*Searchbar*</p>
+        <div className="my-8 flex items-center border border-red rounded-2xl overflow-hidden xl:max-w-[50%]">
+          <FaChevronDown className="mx-4 cursor-pointer" />
+          <input
+            type="text"
+            placeholder="Search doctor"
+            className="mr-auto py-2 pl-2 outline-purple-400 xl:basis-2/3"
+          />
+          <button className="h-full py-2 px-4 self-end bg-teal-300 font-bold active:bg-teal-200 active:text-purple-800 lg:py-4 lg:px-6">
+            Find Doctor
+          </button>
+        </div>
 
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           {...doctorsData.slice(firstSlice, secondSlice).map((doctor) => {
