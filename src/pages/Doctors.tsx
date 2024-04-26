@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import { FaChevronDown } from "react-icons/fa";
 
@@ -71,20 +72,20 @@ const Doctors = () => {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           {...doctorsData.slice(firstSlice, secondSlice).map((doctor) => {
             return (
-              <div
-                key={doctor.id}
-                className="mb-8 p-2 flex flex-col gap-y-2 bg-purple-100 text-purple-900 rounded-2xl shadow-sm sm:p-4"
-              >
-                <img
-                  src={doctor.url}
-                  alt="Doctor"
-                  className="w-full min-w-60 h-64 object-cover object-top rounded-2xl sm:min-w-64"
-                />
-
-                <h3 className="text-2xl font-bold">Dr. Sudeshna Sinha</h3>
-
-                <p className="mb-4">MBBS, MD (Rheumatologist)</p>
-              </div>
+              <Link to={`/doctors/${doctor.id}`}>
+                <div
+                  key={doctor.id}
+                  className="mb-8 p-2 flex flex-col gap-y-2 bg-purple-100 text-purple-900 rounded-2xl shadow-sm sm:p-4"
+                >
+                  <img
+                    src={doctor.url}
+                    alt="Doctor"
+                    className="w-full min-w-60 h-64 object-cover object-top rounded-2xl sm:min-w-64"
+                  />
+                  <h3 className="text-2xl font-bold">Dr. Sudeshna Sinha</h3>
+                  <p className="mb-4">MBBS, MD (Rheumatologist)</p>
+                </div>
+              </Link>
             );
           })}
         </div>
