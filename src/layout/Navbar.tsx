@@ -51,7 +51,7 @@ const Navbar = () => {
         </NavLink>
       </div>
 
-      <button className="hidden md:block py-2 px-4 bg-teal-500 text-white rounded-2xl hover:bg-teal-600 ease-in-out duration-200">
+      <button className="hidden md:block py-2 px-4 bg-teal-500 text-white rounded-2xl hover:bg-teal-600 ease-in-out duration-200 active:scale-95">
         Schedule Appointment
       </button>
 

@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 import { TbFirstAidKit } from "react-icons/tb";
 import { IoArrowForward } from "react-icons/io5";
@@ -114,13 +114,40 @@ const Doctor = () => {
           </div>
 
           <div className="flex flex-col gap-4 [&>*]:text-lg md:flex-row">
-            <button className="w-fit flex items-center gap-x-2 py-4 px-8 text-white font-semibold bg-teal-500 rounded-lg">
+            <button className="w-fit flex items-center gap-x-2 py-4 px-8 text-white font-semibold bg-teal-500 rounded-lg hover:bg-teal-600 ease-in-out duration-200 active:scale-95">
               Make an Appointment <IoArrowForward className="text-xl" />
             </button>
+
             <div className="w-fit py-4 px-8 text-teal-500 font-semibold border-2 border-teal-500 rounded-lg">
               +000 5687 4747
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Other Doctors */}
+      <section className="py-8 px-4 text-purple-950 lg:px-16 lg:py-20">
+        <h3 className="mb-8 font-semibold text-4xl text-balance md:text-5xl">
+          Other{" "}
+          <span className="font-playfair-display italic text-purple-400">
+            Doctors
+          </span>
+        </h3>
+
+        <div className="flex flex-col gap-4 md:flex-row">
+          {...doctorsData.slice(0, 3).map((doctor) => (
+            <Link to={`/doctors/${doctor.id}`} className="w-full">
+              <div className="mb-8 p-2 flex flex-col gap-y-2 bg-purple-100 text-purple-900 rounded-2xl shadow-sm sm:p-4 md:max-w-96">
+                <img
+                  src={doctor.url}
+                  alt="Doctor"
+                  className="w-full min-w-60 h-64 object-cover object-top rounded-2xl sm:min-w-64"
+                />
+                <h3 className="text-2xl font-bold">Dr. Sudeshna Sinha</h3>
+                <p className="mb-4">MBBS, MD (Rheumatologist)</p>
+              </div>
+            </Link>
+          ))}
         </div>
       </section>
     </>

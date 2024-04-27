@@ -17,7 +17,7 @@ const Appointment = () => {
         experienced healthcare professionals today.
       </p>
 
-      <button className="py-4 px-8 flex items-center gap-x-4 bg-teal-500 font-medium text-white rounded-2xl lg:hover:bg-teal-600 ease-in-out duration-200">
+      <button className="py-4 px-8 flex items-center gap-x-4 bg-teal-500 font-medium text-white rounded-2xl lg:hover:bg-teal-600 ease-in-out duration-200 active:scale-95">
         Schedule an appointment <IoArrowForward className="text-2xl" />
       </button>
     </section>

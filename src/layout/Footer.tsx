@@ -17,9 +17,9 @@ const Footer = () => {
           <input
             type="email"
             placeholder="example@gmail.com"
-            className="pl-4 text-purple-400 bg-transparent border border-purple-400 rounded-2xl focus:outline-0 placeholder:text-purple-400"
+            className="pl-4 text-purple-400 bg-transparent border border-purple-400 rounded-2xl focus:outline-teal-400 placeholder:text-purple-400"
           />
-          <button className="py-2 px-4 bg-teal-500 text-white rounded-xl md:hover:bg-teal-600 ease-in-out duration-200">
+          <button className="py-2 px-4 bg-teal-500 text-white rounded-xl md:hover:bg-teal-600 ease-in-out duration-200 active:scale-95">
             Subscribe
           </button>
         </div>
