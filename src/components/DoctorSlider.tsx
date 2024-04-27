@@ -7,7 +7,7 @@ const DoctorSlider = () => {
   const [slide, setSlide] = useState(0);
 
   function handleSlide(direction: string) {
-    if (direction === "right" && slide !== -1200) {
+    if (direction === "right" && slide !== -1800) {
       setSlide((prev) => prev - 600);
     } else if (direction === "left" && slide !== 0) {
       setSlide((prev) => prev + 600);
@@ -56,6 +56,9 @@ const DoctorSlider = () => {
           ></div>
           <div
             className={`${slide === -1200 ? "bg-purple-900" : "bg-gray-200"}`}
+          ></div>
+          <div
+            className={`${slide === -1800 ? "bg-purple-900" : "bg-gray-200"}`}
           ></div>
         </div>
 

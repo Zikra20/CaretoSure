@@ -38,7 +38,7 @@ const Landing = () => {
               ipsum quibusdam earum architecto mollitia perspiciatis odio ipsam
               nam praesentium.
             </p>
-            <button className="w-fit py-4 px-8 flex items-center gap-x-4 bg-teal-500 font-medium text-white rounded-2xl lg:hover:bg-teal-600 ease-in-out duration-200">
+            <button className="w-fit py-4 px-8 flex items-center gap-x-4 bg-teal-500 font-medium text-white rounded-2xl lg:hover:bg-teal-600 ease-in-out duration-200 active:scale-95">
               Make Appointment <IoArrowForward className="text-2xl" />
             </button>
           </div>
@@ -137,7 +137,7 @@ const Landing = () => {
               ipsum quibusdam earum architecto mollitia perspiciatis.
             </p>
 
-            <button className="w-fit py-4 px-8 flex items-center gap-x-4 bg-teal-500 font-medium text-white rounded-2xl lg:hover:bg-teal-600 ease-in-out duration-200">
+            <button className="w-fit py-4 px-8 flex items-center gap-x-4 bg-teal-500 font-medium text-white rounded-2xl lg:hover:bg-teal-600 ease-in-out duration-200 active:scale-95">
               Read More <IoArrowForward className="text-2xl" />
             </button>
           </div>
@@ -172,7 +172,7 @@ const Landing = () => {
             </span>
           </h4>
 
-          <button className="w-fit py-4 px-8 self-start flex items-center gap-x-4 bg-teal-500 font-medium text-white rounded-2xl lg:hover:bg-teal-600 ease-in-out duration-200">
+          <button className="w-fit py-4 px-8 self-start flex items-center gap-x-4 bg-teal-500 font-medium text-white rounded-2xl lg:hover:bg-teal-600 ease-in-out duration-200 active:scale-95">
             See All Doctors <IoArrowForward className="text-2xl" />
           </button>
         </div>
@@ -236,7 +236,7 @@ const Landing = () => {
             </span>
           </h4>
 
-          <button className="w-fit py-4 px-8 self-start flex items-center gap-x-4 bg-teal-500 font-medium text-white rounded-2xl lg:hover:bg-teal-600 ease-in-out duration-200">
+          <button className="w-fit py-4 px-8 self-start flex items-center gap-x-4 bg-teal-500 font-medium text-white rounded-2xl lg:hover:bg-teal-600 ease-in-out duration-200 active:scale-95">
             Read all news <IoArrowForward className="text-2xl" />
           </button>
         </div>

@@ -183,7 +183,7 @@ const Services = () => {
             </span>
           </h4>
 
-          <button className="w-fit py-4 px-8 self-start flex items-center gap-x-4 bg-teal-500 font-medium text-white rounded-2xl lg:hover:bg-teal-600 ease-in-out duration-200">
+          <button className="w-fit py-4 px-8 self-start flex items-center gap-x-4 bg-teal-500 font-medium text-white rounded-2xl lg:hover:bg-teal-600 ease-in-out duration-200 active:scale-95">
             See All Doctors <IoArrowForward className="text-2xl" />
           </button>
         </div>
