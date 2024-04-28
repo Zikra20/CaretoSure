@@ -9,6 +9,7 @@ const Services = lazy(() => import("./Services"));
 const Blog = lazy(() => import("./Blog"));
 const Doctors = lazy(() => import("./Doctors"));
 const Doctor = lazy(() => import("./Doctor"));
+const Contact = lazy(() => import("./Contact"));
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "/blog",
         element: <Blog />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
     ],
   },
