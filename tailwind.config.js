@@ -14,10 +14,17 @@ export default {
           '0%': { maxHeight: '0vh', opacity: 0 },
           '50%': { opacity: 0 },
           '100%': { maxHeight: '35vh', opacity: 1 }
+        },
+        'slide-in-right': {
+          '0%': { transform: 'translateX(100%)' },
+          '60%': { transform: 'translateX(-15%)' },
+          '80%': { transform: 'translateX(5%)' },
+          '100%': { transform: 'translateX(0)' }
         }
       },
       animation: {
-        'slide-in-top': 'slide-in-top .3s ease-out'
+        'slide-in-top': 'slide-in-top .3s ease-out',
+        'slide-in-right': 'slide-in-right .3s'
       }
     },
   },
