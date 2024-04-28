@@ -1,3 +1,4 @@
+import { useToast } from "../utils/toast-context";
 import { IoArrowForward, IoStar } from "react-icons/io5";
 
 const patients = [
@@ -7,6 +8,8 @@ const patients = [
 ];
 
 const Contact = () => {
+  const toast = useToast();
+
   return (
     <>
       {/* Header Section */}
@@ -141,6 +144,7 @@ const Contact = () => {
 
             <button
               type="submit"
+              onClick={() => toast?.open("Appointment scheduled succesfully.")}
               className="w-fit py-4 px-8 flex items-center gap-x-4 text-white text-xl bg-teal-500 rounded-xl lg:hover:bg-teal-600 ease-in-out duration-200 active:scale-95"
             >
               Submit{" "}

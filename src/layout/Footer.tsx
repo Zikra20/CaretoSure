@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import { useToast } from "../utils/toast-context";
 
 const Footer = () => {
+  const toast = useToast();
+
   return (
     <div className="w-full px-4 py-8 flex flex-col justify-between gap-y-8 bg-indigo-950 lg:px-12 lg:py-16 lg:flex-row">
       <div className="flex flex-col gap-y-4 lg:basis-1/4 lg:mr-auto">
@@ -19,7 +22,10 @@ const Footer = () => {
             placeholder="example@gmail.com"
             className="pl-4 text-purple-400 bg-transparent border border-purple-400 rounded-2xl focus:outline-teal-400 placeholder:text-purple-400"
           />
-          <button className="py-2 px-4 bg-teal-500 text-white rounded-xl md:hover:bg-teal-600 ease-in-out duration-200 active:scale-95">
+          <button
+            onClick={() => toast?.open("Succesfully subscribed to newsletter.")}
+            className="py-2 px-4 bg-teal-500 text-white rounded-xl md:hover:bg-teal-600 ease-in-out duration-200 active:scale-95"
+          >
             Subscribe
           </button>
         </div>
