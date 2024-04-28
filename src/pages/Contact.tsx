@@ -1,4 +1,10 @@
-import { IoArrowForward } from "react-icons/io5";
+import { IoArrowForward, IoStar } from "react-icons/io5";
+
+const patients = [
+  { name: "Jacob Jones", url: "/assets/images/reviews/patient-1.jpg" },
+  { name: "Jenny Wilson", url: "/assets/images/reviews/patient-2.jpg" },
+  { name: "Leslie Alexander", url: "/assets/images/reviews/patient-3.jpg" },
+];
 
 const Contact = () => {
   return (
@@ -149,6 +155,50 @@ const Contact = () => {
             alt=""
             className="w-full h-96 object-cover rounded-2xl lg:w-2/4 lg:h-[600px]"
           />
+        </div>
+      </section>
+
+      {/* Reviews Section */}
+      <section className="py-8 px-4 text-purple-900 lg:px-16 lg:py-20">
+        <h2 className="mb-16 font-semibold text-4xl text-balance md:text-5xl">
+          Our{" "}
+          <span className="font-playfair-display italic text-purple-400">
+            patient's
+          </span>{" "}
+          feedback
+        </h2>
+
+        <div className="w-full flex flex-col gap-4 lg:flex-row">
+          {patients.map((patient) => (
+            <div className="p-4 flex flex-col gap-y-4 bg-purple-100 font-semibold text-lg rounded-xl lg:gap-y-6">
+              {/* Profile pic // Name // Rating */}
+              <div className="flex items-center gap-x-6">
+                <img
+                  src={patient.url}
+                  alt={`${patient.name}'s profile picture`}
+                  className="h-16 w-16 object-cover rounded-full shadow-md"
+                />
+
+                <div className="flex flex-col gap-y-2 font-semibold text-xl lg:text-2xl">
+                  <p>{patient.name}</p>
+
+                  <span className="flex gap-x-1">
+                    <IoStar /> <IoStar /> <IoStar /> <IoStar /> <IoStar />
+                  </span>
+                </div>
+              </div>
+
+              {/* Review */}
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                similique veritatis aliquam id, quae esse laborum reiciendis. Id
+                qui, eveniet ut atque veniam excepturi optio quibusdam,
+                reiciendis molestias dignissimos ab.
+              </p>
+
+              <span className="mb-8">16:08 PM Mar 20 2023</span>
+            </div>
+          ))}
         </div>
       </section>
     </>
