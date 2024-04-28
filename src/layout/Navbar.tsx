@@ -11,11 +11,6 @@ const Navbar = () => {
     setDisplayMenu((prev) => !prev);
   };
 
-  //NavLink Style
-  const navStyle = ({ isActive }) => ({
-    color: isActive ? "rgb(45 212 191)" : "",
-  });
-
   return (
     <nav className="relative flex items-center p-4 md:justify-around">
       <NavLink
@@ -26,27 +21,48 @@ const Navbar = () => {
       </NavLink>
 
       <div className="hidden sm:flex gap-x-4 text-lg font-medium text-purple-950 [&>*]:ease-in [&>*]:duration-75">
-        <NavLink to="/about" className="hover:text-teal-400" style={navStyle}>
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            isActive ? "text-teal-400" : "hover:text-teal-400"
+          }
+        >
           About
         </NavLink>
 
         <NavLink
           to="/services"
-          className="hover:text-teal-400"
-          style={navStyle}
+          className={({ isActive }) =>
+            isActive ? "text-teal-400" : "hover:text-teal-400"
+          }
         >
           Services
         </NavLink>
 
-        <NavLink to="/doctors" className="hover:text-teal-400" style={navStyle}>
+        <NavLink
+          to="/doctors"
+          className={({ isActive }) =>
+            isActive ? "text-teal-400" : "hover:text-teal-400"
+          }
+        >
           Doctors
         </NavLink>
 
-        <NavLink to="/blog" className="hover:text-teal-400" style={navStyle}>
+        <NavLink
+          to="/blog"
+          className={({ isActive }) =>
+            isActive ? "text-teal-400" : "hover:text-teal-400"
+          }
+        >
           Blog
         </NavLink>
 
-        <NavLink to="/contact" className="hover:text-teal-400" style={navStyle}>
+        <NavLink
+          to="/contact"
+          className={({ isActive }) =>
+            isActive ? "text-teal-400" : "hover:text-teal-400"
+          }
+        >
           Contact
         </NavLink>
       </div>
