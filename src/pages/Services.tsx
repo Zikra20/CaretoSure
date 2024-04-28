@@ -38,7 +38,7 @@ const About = () => {
           </h1>
 
           <div className="flex flex-col gap-y-4 md:basis-1/3">
-            <p className="w-fit">
+            <p className="w-fit lg:text-lg">
               We believe that good health is the foundation for a fulfilling and
               prosperous life, and our mission is to provide reliable
               information, expert guidance and personalized support to help you
@@ -70,12 +70,14 @@ const About = () => {
               key={service.id}
               className="px-4 py-8 flex flex-col gap-y-4 bg-purple-100 rounded-xl md:gap-y-6"
             >
-              <span className="text-3xl text-teal-500">{service.icon}</span>
-              <h2 className="text-xl font-bold">{service.name}</h2>
-              <p>
+              <span className="text-3xl text-teal-500 lg:text-4xl">
+                {service.icon}
+              </span>
+              <h2 className="text-xl font-bold lg:text-2xl">{service.name}</h2>
+              <p className="mb-8 font-semibold lg:text-lg">
                 These test provide valuable information to healthcare providers
                 about a patient's health status and can help guide treatment
-                decisions.
+                decisions and can help guide treatment decisions.
               </p>
             </div>
           ))}

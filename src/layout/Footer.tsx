@@ -34,7 +34,7 @@ const Footer = () => {
           <Link to="/about" className="lg:hover:text-teal-400">
             About
           </Link>
-          <Link to="/service" className="lg:hover:text-teal-400">
+          <Link to="/services" className="lg:hover:text-teal-400">
             Service
           </Link>
           <Link to="/doctors" className="lg:hover:text-teal-400">
@@ -44,10 +44,18 @@ const Footer = () => {
 
         <div className="flex flex-col gap-y-6 [&>*]:w-fit">
           <span className="text-2xl font-semibold">Legal</span>
-          <a>Privacy Policy</a>
-          <a>Terms & Conditions</a>
-          <a>Service</a>
-          <a>Blog Post</a>
+          <a href="#" className="lg:hover:text-teal-400">
+            Privacy Policy
+          </a>
+          <a href="#" className="lg:hover:text-teal-400">
+            Terms & Conditions
+          </a>
+          <a href="#" className="lg:hover:text-teal-400">
+            Service
+          </a>
+          <a href="#" className="lg:hover:text-teal-400">
+            Blog Post
+          </a>
         </div>
 
         <div className="flex flex-col gap-y-6 font-medium [&>*]:w-fit">

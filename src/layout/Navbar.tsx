@@ -51,9 +51,12 @@ const Navbar = () => {
         </NavLink>
       </div>
 
-      <button className="hidden md:block py-2 px-4 bg-teal-500 text-white rounded-2xl hover:bg-teal-600 ease-in-out duration-200 active:scale-95">
+      <Link
+        to="/contact"
+        className="hidden md:block py-2 px-4 bg-teal-500 text-white rounded-2xl hover:bg-teal-600 ease-in-out duration-200 active:scale-95"
+      >
         Schedule Appointment
-      </button>
+      </Link>
 
       {/* Mobile menu */}
       <div className="text-3xl sm:hidden" onClick={handleMenu}>

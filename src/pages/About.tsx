@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { FaHeadset, FaHandHoldingMedical } from "react-icons/fa";
 import { RiTeamFill } from "react-icons/ri";
 import { IoArrowForward } from "react-icons/io5";
@@ -183,9 +185,12 @@ const Services = () => {
             </span>
           </h4>
 
-          <button className="w-fit py-4 px-8 self-start flex items-center gap-x-4 bg-teal-500 font-medium text-white rounded-2xl lg:hover:bg-teal-600 ease-in-out duration-200 active:scale-95">
+          <Link
+            to="/doctors"
+            className="w-fit py-4 px-8 self-start flex items-center gap-x-4 bg-teal-500 font-medium text-white rounded-2xl lg:hover:bg-teal-600 ease-in-out duration-200 active:scale-95"
+          >
             See All Doctors <IoArrowForward className="text-2xl" />
-          </button>
+          </Link>
         </div>
 
         <DoctorSlider />
