@@ -89,7 +89,7 @@ const Services = () => {
               <img
                 src="/assets/images/about/about-reviewer.jpg"
                 alt="Reviewer profile picture"
-                className="size-12 rounded-full"
+                className="size-12 object-cover rounded-full"
               />
 
               <p>

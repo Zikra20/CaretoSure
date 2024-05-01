@@ -114,9 +114,12 @@ const Doctor = () => {
           </div>
 
           <div className="flex flex-col gap-4 [&>*]:text-lg md:flex-row">
-            <button className="w-fit flex items-center gap-x-2 py-4 px-8 text-white font-semibold bg-teal-500 rounded-lg hover:bg-teal-600 ease-in-out duration-200 active:scale-95">
+            <Link
+              to={"/contact"}
+              className="w-fit flex items-center gap-x-2 py-4 px-8 text-white font-semibold bg-teal-500 rounded-lg hover:bg-teal-600 ease-in-out duration-200 active:scale-95"
+            >
               Make an Appointment <IoArrowForward className="text-xl" />
-            </button>
+            </Link>
 
             <div className="w-fit py-4 px-8 text-teal-500 font-semibold border-2 border-teal-500 rounded-lg">
               +000 5687 4747
