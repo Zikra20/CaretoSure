@@ -27,11 +27,11 @@ export function Toast({ message, close }: ToastProperties) {
   });
 
   return (
-    <div className="relative p-4 w-[350px] bg-purple-100 text-purple-900 font-semibold border-l-8 border-purple-500 rounded-md animate-slide-in-right">
+    <div className="relative p-4 w-[350px] bg-purple-100 text-teal-900 font-semibold border-l-8 border-teal-500 rounded-md animate-slide-in-right">
       <p>{message}</p>
       <button
         onClick={close}
-        className="absolute top-4 right-4 text-2xl text-purple-500 cursor-pointer focus:outline-purple-400"
+        className="absolute top-4 right-4 text-2xl text-teal-500 cursor-pointer focus:outline-teal-400"
       >
         <IoCloseSharp />
       </button>

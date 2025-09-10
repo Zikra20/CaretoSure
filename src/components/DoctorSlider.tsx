@@ -31,7 +31,7 @@ const DoctorSlider = () => {
           return (
             <div
               key={doctor.id}
-              className="mb-8 p-2 flex flex-col gap-y-2 bg-purple-100 text-center text-purple-900 rounded-2xl"
+              className="mb-8 p-2 flex flex-col gap-y-2 bg-teal-100 text-center text-teal-900 rounded-2xl"
             >
               <img
                 src={doctor.url}
@@ -49,16 +49,16 @@ const DoctorSlider = () => {
       <div className="hidden md:flex w-full flex-col items-center justify-between gap-y-4 lg:flex-row">
         <div className="w-full lg:basis-1/3 flex items-center gap-x-2 [&>*]:h-2 [&>*]:basis-1/3">
           <div
-            className={`${slide === 0 ? "bg-purple-900" : "bg-gray-200"}`}
+            className={`${slide === 0 ? "bg-teal-900" : "bg-gray-200"}`}
           ></div>
           <div
-            className={`${slide === -600 ? "bg-purple-900" : "bg-gray-200"}`}
+            className={`${slide === -600 ? "bg-teal-900" : "bg-gray-200"}`}
           ></div>
           <div
-            className={`${slide === -1200 ? "bg-purple-900" : "bg-gray-200"}`}
+            className={`${slide === -1200 ? "bg-teal-900" : "bg-gray-200"}`}
           ></div>
           <div
-            className={`${slide === -1800 ? "bg-purple-900" : "bg-gray-200"}`}
+            className={`${slide === -1800 ? "bg-teal-900" : "bg-gray-200"}`}
           ></div>
         </div>
 

@@ -23,7 +23,10 @@ const Landing = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="py-8 px-4 bg-indigo-950 text-purple-400 lg:p-16">
+      <section
+        className="py-8 px-4 text-white lg:p-16"
+        style={{ backgroundColor: "#1092c9" }}
+      >
         <div className="flex flex-col items-center gap-y-4 mb-8 md:flex-row">
           <h1 className="text-4xl text-balance mr-auto md:basis-1/3 md:text-5xl">
             We provide world class{" "}
@@ -35,9 +38,10 @@ const Landing = () => {
 
           <div className="flex flex-col gap-y-4 md:basis-1/3">
             <p className="w-fit">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
-              ipsum quibusdam earum architecto mollitia perspiciatis odio ipsam
-              nam praesentium.
+              Our healthcare team is dedicated to delivering advanced medical care
+              using the latest technology and evidence-based practices. We strive
+              to ensure every patient receives personalized attention and the
+              highest quality treatment.
             </p>
 
             <Link
@@ -57,18 +61,19 @@ const Landing = () => {
       </section>
 
       {/* "Core Values" Section (fields of study) */}
-      <section className="py-16 px-4 text-purple-900 lg:p-16">
+      <section className="py-16 px-4 text-[#04beb4] lg:p-16">
         <h2 className="text-3xl font-semibold mb-2">
           Our{" "}
-          <span className="font-playfair-display italic text-purple-400">
+          <span className="font-playfair-display italic text-[#1b9ca6]">
             Core
           </span>{" "}
           Values
         </h2>
 
         <p className="mb-12">
-          Expedita similique soluta vel quibusdam ea repellendus blanditiis
-          atque, laudantium assumenda dolor ratione eveniet.
+          We believe in compassion, innovation, and integrity. Our commitment is
+          to provide ethical healthcare, foster continuous learning, and always
+          put our patients first.
         </p>
 
         <div className="flex flex-wrap justify-around gap-y-8 [&>*]:rounded-3xl">
@@ -80,8 +85,9 @@ const Landing = () => {
             <h3 className="text-xl font-bold">Early Cancer Detection</h3>
 
             <p>
-              Odit esse deleniti id veniam dicta corporis et magni explicabo,
-              distinctio velit harum, provident explicabo dolor corporis iste.
+              We utilize advanced screening methods to detect cancer at its
+              earliest stages, improving outcomes and offering hope to patients
+              and families.
             </p>
 
             <a className="w-fit text-xl text-teal-400 font-semibold" href="#">
@@ -97,8 +103,9 @@ const Landing = () => {
             <h3 className="text-xl font-bold">Clinical Neurophysiology</h3>
 
             <p>
-              Odit esse deleniti id veniam dicta corporis et magni explicabo,
-              distinctio velit harum, provident explicabo dolor corporis iste.
+              Our specialists diagnose and treat neurological disorders using
+              state-of-the-art equipment and research-driven approaches for optimal
+              patient care.
             </p>
 
             <a className="w-fit text-xl text-teal-400 font-semibold" href="#">
@@ -106,16 +113,17 @@ const Landing = () => {
             </a>
           </div>
 
-          <div className="max-w-80 p-8 flex flex-col gap-y-4 bg-purple-100">
-            <div className="w-fit p-4 text-3xl bg-purple-200 rounded-full">
+          <div className="max-w-80 p-8 flex flex-col gap-y-4  bg-emerald-100">
+            <div className="w-fit p-4 text-3xl  bg-emerald-200 rounded-full">
               <FaLaptopMedical />
             </div>
 
             <h3 className="text-xl font-bold">Gastroenterology</h3>
 
             <p>
-              Odit esse deleniti id veniam dicta corporis et magni explicabo,
-              distinctio velit harum, provident explicabo dolor corporis iste.
+              We offer comprehensive digestive health services, from routine
+              screenings to complex procedures, ensuring comfort and effective
+              treatment for every patient.
             </p>
 
             <a className="w-fit text-xl text-teal-400 font-semibold" href="#">
@@ -126,11 +134,13 @@ const Landing = () => {
       </section>
 
       {/* Health and well-being Section */}
-      <section className="py-8 px-4 bg-purple-400 text-purple-900 lg:px-16 lg:py-24">
+      <section className="py-8 px-4 text-white lg:px-16 lg:py-24"
+      style={{backgroundColor:'#1092c9'}}
+      >
         <div className="flex flex-col items-center gap-y-4 mb-8 md:flex-row">
           <h3 className="text-2xl font-semibold mr-auto md:basis-2/4 md:text-4xl">
             Finding new ways to improve the{" "}
-            <span className="font-playfair-display italic text-purple-50">
+            <span className="font-playfair-display italic text-teal-400">
               health and well-being
             </span>{" "}
             of people everywhere.
@@ -138,8 +148,9 @@ const Landing = () => {
 
           <div className="flex flex-col gap-y-4 md:basis-1/3">
             <p className="w-fit text-xl">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
-              ipsum quibusdam earum architecto mollitia perspiciatis.
+              Our team is constantly researching and implementing innovative
+              solutions to enhance patient wellness and promote healthier
+              communities.
             </p>
 
             <Link
@@ -171,11 +182,11 @@ const Landing = () => {
       </section>
 
       {/* Doctors Showcase Section */}
-      <section className="py-8 px-4 text-purple-900 lg:px-16 lg:py-24">
+      <section className="py-8 px-4 text-teal-400 lg:px-16 lg:py-24">
         <div className="flex flex-col items-center gap-y-4 mb-8 md:flex-row">
           <h4 className="text-4xl font-semibold mr-auto md:basis-1/3">
             Discover our Highly Qualified{" "}
-            <span className="font-playfair-display text-purple-400 italic">
+            <span className="font-playfair-display text-[#1391ce] italic">
               Doctors
             </span>
           </h4>
@@ -190,13 +201,14 @@ const Landing = () => {
 
         <DoctorSlider />
 
-        <span className="text-purple-950 text-center md:hidden">
+        <span className="text-teal-400 text-center md:hidden">
           *Swipe left or right to see more.
         </span>
       </section>
 
       {/* FAQ Section */}
-      <section className="py-8 px-4 bg-cyan-400 text-purple-900 cursor-pointer lg:px-16 lg:py-24">
+      <section className="py-8 px-4 text-white-900 cursor-pointer lg:px-16 lg:py-24"
+        style={{ backgroundColor: "#1391ce" }}>
         <h5 className="text-2xl md:text-4xl font-semibold mb-12">
           Frequently Asked{" "}
           <span className="text-white font-playfair-display italic">
@@ -208,11 +220,11 @@ const Landing = () => {
           {faqData.map((faq) => (
             <div
               key={faq.id}
-              className="flex flex-wrap gap-y-4 border-b border-purple-900 [&>*]:px-4 [&>*]:select-none"
+              className="flex flex-wrap gap-y-4 border-b border-cyan-900 [&>*]:px-4 [&>*]:select-none"
               onClick={() => handleFAQ(faq.id)}
             >
               <div className="w-full py-4 flex items-center justify-between group">
-                <p className="basis-4/5 font-bold cursor-pointer ease-linear duration-150 group-hover:text-purple-500 lg:text-xl">
+                <p className="basis-4/5 font-bold cursor-pointer ease-linear duration-150 group-hover:text-white-500 lg:text-xl">
                   {faq.question}
                 </p>
                 <span
@@ -238,11 +250,11 @@ const Landing = () => {
       </section>
 
       {/* News Section */}
-      <section className="py-8 px-4 text-purple-900 lg:px-16 lg:py-24">
+      <section className="py-8 px-4 text-teal-900 lg:px-16 lg:py-24">
         <div className="flex flex-col items-center gap-y-4 mb-8 md:flex-row">
           <h4 className="text-4xl font-semibold mr-auto md:basis-1/3">
             Our Latest{" "}
-            <span className="font-playfair-display text-purple-400 italic">
+            <span className="font-playfair-display text-teal-400 italic">
               News
             </span>
           </h4>
@@ -257,7 +269,7 @@ const Landing = () => {
 
         <NewsSlider />
 
-        <span className="text-purple-950 text-center md:hidden">
+        <span className="text-teal-950 text-center md:hidden">
           *Swipe left or right to see more.
         </span>
       </section>

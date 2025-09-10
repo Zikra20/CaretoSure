@@ -14,16 +14,19 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <nav className="flex justify-between items-center h-20 relative">
           {/* Logo section */}
-          <Link
-            to="/"
-            className="flex items-center space-x-3 hover:opacity-80 transition-opacity"
-          >
-            <img
-              src="/public/assets/images/logos/CTS.png"
-              alt="CaretoSure Logo"
-              className="h-16 w-auto"
-            />
-          </Link>
+          {/* Logo section */}
+  <Link
+    to="/"
+    className="flex items-center space-x-3 hover:opacity-80 transition-opacity mr-auto"
+    // className="absolute left-0 flex items-center space-x-3 hover:opacity-80 transition-opacity"
+  >
+  <img
+    src="/public/assets/images/logos/CTS.png"
+    alt="CaretoSure Logo"
+    className="h-12 w-17 -ml-11"
+  />
+</Link>
+
 
           {/* Center nav links */}
           <div className="hidden md:flex space-x-1">
@@ -32,8 +35,8 @@ const Navbar = () => {
               className={({ isActive }) =>
                 `px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300 transform ${
                   isActive
-                    ? 'text-gray-900 scale-95'
-                    : 'text-gray-700 hover:underline hover:scale-95'
+                     ? 'text-teal-400 underline decoration-teal-400 scale-95'
+      : 'text-gray-700 hover:text-teal-600 hover:underline hover:decoration-teal-600 hover:scale-95'
                 }`
               }
             >
@@ -44,8 +47,10 @@ const Navbar = () => {
               className={({ isActive }) =>
                 `px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300 transform ${
                   isActive
-                    ? 'text-gray-900 scale-95'
-                    : 'text-gray-700 hover:underline hover:scale-95'
+                    // ? 'text-teal-200 scale-95'
+                    // : 'text-gray-700 hover:underline hover:scale-95'
+                    ? 'text-teal-400 underline decoration-teal-400 scale-95'
+                    : 'text-gray-700 hover:text-teal-600 hover:underline hover:decoration-teal-600 hover:scale-95'
                 }`
               }
             >
@@ -56,8 +61,8 @@ const Navbar = () => {
               className={({ isActive }) =>
                 `px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300 transform ${
                   isActive
-                    ? 'text-gray-900 scale-95'
-                    : 'text-gray-700 hover:underline hover:scale-95'
+                     ? 'text-teal-400 underline decoration-teal-400 scale-95'
+      : 'text-gray-700 hover:text-teal-600 hover:underline hover:decoration-teal-600 hover:scale-95'
                 }`
               }
             >
@@ -68,8 +73,8 @@ const Navbar = () => {
               className={({ isActive }) =>
                 `px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300 transform ${
                   isActive
-                    ? 'text-gray-900 scale-95'
-                    : 'text-gray-700 hover:underline hover:scale-95'
+                   ? 'text-teal-400 underline decoration-teal-400 scale-95'
+      : 'text-gray-700 hover:text-teal-600 hover:underline hover:decoration-teal-600 hover:scale-95'
                 }`
               }
             >
@@ -80,8 +85,8 @@ const Navbar = () => {
               className={({ isActive }) =>
                 `px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300 transform ${
                   isActive
-                    ? 'text-gray-900 scale-95'
-                    : 'text-gray-700 hover:underline hover:scale-95'
+                     ? 'text-teal-400 underline decoration-teal-400 scale-95'
+      : 'text-gray-700 hover:text-teal-600 hover:underline hover:decoration-teal-600 hover:scale-95'
                 }`
               }
             >

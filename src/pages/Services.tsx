@@ -13,36 +13,34 @@ import {
 } from "react-icons/gi";
 
 const services = [
-  { id: 1, icon: <FaVial />, name: "Lab Tests" },
-  { id: 2, icon: <FaHeart />, name: "Heart Diseases" },
-  { id: 3, icon: <FaTooth />, name: "Dental" },
-  { id: 4, icon: <GiNightSleep />, name: "Hypnotherapy" },
-  { id: 5, icon: <FaBrain />, name: "Neurology" },
-  { id: 6, icon: <GiKidneys />, name: "Urology" },
-  { id: 7, icon: <FaStethoscope />, name: "Occupational Medicine" },
-  { id: 8, icon: <GiLoveInjection />, name: "Vaccinations" },
-  { id: 9, icon: <GiFemale />, name: "Women's Health" },
+  { id: 1, icon: <FaVial />, name: "Lab Tests", description: "Comprehensive laboratory diagnostics to help detect, monitor, and manage a wide range of health conditions." },
+  { id: 2, icon: <FaHeart />, name: "Heart Diseases", description: "Expert care for cardiovascular health, including prevention, diagnosis, and treatment of heart-related conditions." },
+  { id: 3, icon: <FaTooth />, name: "Dental", description: "Quality dental care for all ages, from routine checkups and cleanings to advanced procedures." },
+  { id: 4, icon: <GiNightSleep />, name: "Hypnotherapy", description: "Professional hypnotherapy services to support mental wellness, stress reduction, and behavioral change." },
+  { id: 5, icon: <FaBrain />, name: "Neurology", description: "Specialized neurological care for disorders affecting the brain, spine, and nerves." },
+  { id: 6, icon: <GiKidneys />, name: "Urology", description: "Comprehensive urological services for kidney, bladder, and urinary tract health." },
+  { id: 7, icon: <FaStethoscope />, name: "Occupational Medicine", description: "Workplace health solutions, injury management, and preventive care for employees." },
+  { id: 8, icon: <GiLoveInjection />, name: "Vaccinations", description: "Routine and travel vaccinations to protect you and your family from infectious diseases." },
+  { id: 9, icon: <GiFemale />, name: "Women's Health", description: "Personalized care for women’s health needs, including reproductive, hormonal, and preventive services." },
 ];
 
 const About = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="py-8 px-4 bg-indigo-950 text-purple-400 lg:p-16">
+      <section className="py-8 px-4 text-white lg:p-16"
+      style={{ backgroundColor: "#0ba9c1" }}>
         <div className="flex flex-col items-center gap-y-4 mb-8 md:flex-row">
           <h1 className="text-4xl text-balance mr-auto md:basis-1/3 md:text-5xl">
             Our{" "}
-            <span className="font-playfair-display text-teal-400 italic">
-              services
+            <span className="font-playfair-display text-white italic">
+              Services
             </span>
           </h1>
 
           <div className="flex flex-col gap-y-4 md:basis-1/3">
             <p className="w-fit lg:text-lg">
-              We believe that good health is the foundation for a fulfilling and
-              prosperous life, and our mission is to provide reliable
-              information, expert guidance and personalized support to help you
-              achieve your health goals.
+              At CaretoSure, we are dedicated to supporting your health journey with a wide range of specialized medical services. Our team combines expertise, compassion, and the latest technology to deliver care you can trust.
             </p>
           </div>
         </div>
@@ -63,21 +61,19 @@ const About = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-8 px-4 text-purple-900 lg:p-16">
+      <section className="py-8 px-4 text-[#222222] lg:p-16">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-y-8">
           {services.map((service) => (
             <div
               key={service.id}
-              className="px-4 py-8 flex flex-col gap-y-4 bg-purple-100 rounded-xl md:gap-y-6"
+              className="px-4 py-8 flex flex-col gap-y-4 bg-[#9cdae4] rounded-xl md:gap-y-6"
             >
               <span className="text-3xl text-teal-500 lg:text-4xl">
                 {service.icon}
               </span>
               <h2 className="text-xl font-bold lg:text-2xl">{service.name}</h2>
               <p className="mb-8 font-semibold lg:text-lg">
-                These test provide valuable information to healthcare providers
-                about a patient's health status and can help guide treatment
-                decisions and can help guide treatment decisions.
+                {service.description}
               </p>
             </div>
           ))}
